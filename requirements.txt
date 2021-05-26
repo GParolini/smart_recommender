@@ -2,7 +2,4 @@ Flask
 gunicorn
 pandas
 numpy
-json
-pickle
-random
 sklearn
