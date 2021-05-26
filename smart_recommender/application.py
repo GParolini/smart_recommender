@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-from nmf_recommender import nmf_recommendations
+from .nmf_recommender import nmf_recommendations
 
 
 app = Flask(__name__)
