@@ -6,14 +6,14 @@ import pickle
 import random
 
 #Loading the wide matrix
-nmf_matrix = pd.read_csv("./r_wide_matrix.csv", index_col =0)
+nmf_matrix = pd.read_csv("./smart_recommender/r_wide_matrix.csv", index_col =0)
 
 #Loading the saved model
-with open('./nmf_model.pkl', 'rb') as file:
+with open('./smart_recommender/nmf_model.pkl', 'rb') as file:
     nmf_model = pickle.load(file)
 
 #Loading the movies dictionary
-movies_dict_file = open("./movies_dict.json", "r")
+movies_dict_file = open("./smart_recommender/movies_dict.json", "r")
 movies_dict = json.load(movies_dict_file)
 
 
