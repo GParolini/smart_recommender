@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+
+
+<div class="homecontent">
+    <h2>If you are looking for movie recommendations...
+      <br>
+      ... you are in the right place</h2>
+    <form action="/recommender">
+        <h2>Please rate the following movies on a scale from 0.0 (terrible) to 5.0 (fantastic):</h2>
+        <ol>
+       <li>
+         <p>Bambi <a href="https://en.wikipedia.org/wiki/Bambi">[plot]</a>:
+        <input type="text" name="2018" placeholder="0.0 - 5.0"><br></li>
+        <li><p>The Name of the Rose <a href="https://en.wikipedia.org/wiki/The_Name_of_the_Rose">[plot]</a>:
+        <input type="text" name="2467" placeholder="0.0 - 5.0"><br></li>
+        <li><p>Howards End <a href="https://en.wikipedia.org/wiki/Howards_End_(film)">[plot]</a>:
+        <input type="text" name="3260" placeholder="0.0 - 5.0"><br></li>
+        <li><p>Rome, Open City <a href="https://en.wikipedia.org/wiki/Rome,_Open_City">[plot]</a>:
+        <input type="text" name="5304" placeholder="0.0 - 5.0"><br></li>
+        <li><p>Guess Who's Coming to Dinner <a href="https://en.wikipedia.org/wiki/Guess_Who%27s_Coming_to_Dinner">[plot]</a>:
+        <input type="text" name="3451" placeholder="0.0 - 5.0"><br></li>
+        <div class="button"><input type="submit"></div>
+        </p>
+      </ol>
+    </form>
+    </div>
+  <br>
+  <br>
+  <br>
+  <p>You can browse the <a href="http://movielens.org"> MovieLens </a> website for a more comprehensive film selection.</p>
+
+
+{% endblock %}

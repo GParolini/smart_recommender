@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="homecontent">
+    <h3>Your smart recommendations are:</h3>
+
+        <ul>
+        {% for m in movies%}
+        <li><p>{{ m }}</p></li>
+        {% endfor %}
+
+        <ul>
+
+        <br>
+        <a href="/"><div class="button5"><p>Return to the home page</p></div></a>
+
+{% endblock %}
